@@ -63,7 +63,7 @@ box-sizing: border-box;
   border-radius: 16px;
   width: 100%;
   max-width: 580px;
-  padding: 1.5rem;
+  padding: 0 0 2rem 0;
   text-decoration: none;
   color: inherit;
   box-shadow: 0 4px 12px var(--shadow);
