@@ -6,6 +6,7 @@
   --muted: #9aa0b2;
   --highlight: #4da3ff;
   --shadow: rgba(0, 0, 0, 0.6);
+--near-white: rgb(240, 246, 252);
 }
 
 body {
@@ -25,6 +26,7 @@ header {
 header h1 {
   margin-bottom: 0.5rem;
   font-weight: 600;
+color: var(--near-white);
 }
 
 header p {
@@ -41,6 +43,8 @@ section h2 {
   margin-bottom: 1.5rem;
   font-size: 1.6rem;
   font-weight: 600;
+color: var(--near-white);
+
 }
 
 /* GRID: flexible 3-Spalten mit sicherem Umbruch */
