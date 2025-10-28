@@ -31,6 +31,9 @@ header p {
   font-size: 1.05rem;
 }
 
+section{
+margin-top: 10vw;
+}
 .grid {
   display: flex;
   flex-wrap: wrap;
