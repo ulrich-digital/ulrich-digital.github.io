@@ -1,9 +1,11 @@
 :root {
-  --bg: #f9fafb;
-  --card-bg: #fff;
-  --border: #ddd;
-  --text: #222;
-  --highlight: #0070f3;
+  --bg: #0f1116;
+  --surface: #1a1d23;
+  --border: #2a2f3a;
+  --text: #e6e9ef;
+  --muted: #9ba1b0;
+  --highlight: #4da3ff;
+  --shadow: rgba(0, 0, 0, 0.6);
 }
 
 body {
@@ -21,6 +23,12 @@ header {
 
 header h1 {
   margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+header p {
+  color: var(--muted);
+  font-size: 1.05rem;
 }
 
 .grid {
@@ -32,27 +40,28 @@ header h1 {
 }
 
 .card {
-  background: var(--card-bg);
+  background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 16px;
   width: 260px;
   padding: 1rem;
   text-decoration: none;
   color: inherit;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  box-shadow: 0 4px 12px var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
   border-color: var(--highlight);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
 }
 
 .card img {
   width: 100%;
   border-radius: 12px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid var(--border);
 }
 
 .card h2 {
@@ -62,19 +71,22 @@ header h1 {
 
 .card p {
   font-size: 0.9rem;
-  color: #555;
+  color: var(--muted);
 }
 
 footer {
   border-top: 1px solid var(--border);
-  margin-top: 2rem;
+  margin-top: 3rem;
   padding: 2rem 1rem;
   font-size: 0.9rem;
+  color: var(--muted);
 }
+
 footer a {
   color: var(--highlight);
   text-decoration: none;
 }
+
 footer a:hover {
   text-decoration: underline;
 }
