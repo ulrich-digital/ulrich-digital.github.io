@@ -65,7 +65,7 @@ section h2 {
 	border-radius: 16px;
 	width: 100%;
 	max-width: 420px;
-	padding: 0 0 2rem 0;
+	padding: 0 0 1.44rem 0;
 	text-decoration: none;
 	color: inherit;
 	box-shadow: 0 4px 12px var(--shadow);
@@ -100,10 +100,11 @@ section h2 {
 }
 
 .card p {
-	font-size: 1rem;
+	font-size: 0.9rem;
 	color: var(--muted);
 	margin: 0;
 	flex-grow: 1;
+	padding: 0 0.44rem
 }
 
 /* FOOTER */
