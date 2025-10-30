@@ -133,7 +133,7 @@ header {
 header a.logo {
 	display: block;
 	width: 200px;
-	transition: scale 0.2s ease;
+	transition: transform 0.2s ease;
 }
 
 header a.logo:hover {
