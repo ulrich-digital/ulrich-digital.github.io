@@ -25,11 +25,11 @@ header {
 header a.logo {
 	display: block;
 	width: 200px;
-	transition: transform 0.2s ease;
+	transition: scale 0.2s ease;
 }
 
 header a.logo:hover {
-	transform: translate(4px, 4px);
+	transform: scale(1.1);
 }
 header a.logo img {
 	width: 100%;
