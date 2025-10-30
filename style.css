@@ -22,7 +22,9 @@ body {
 header {
 	padding: 3rem 1rem 1rem;
 }
+header .logo{
 
+}
 header h1 {
 	margin-bottom: 0.5rem;
 	font-weight: 600;
