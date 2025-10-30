@@ -192,6 +192,7 @@ section h2 {
 	letter-spacing: 0.06rem;
 	text-align: left;
 	padding: 0 2rem;
+	margin-top: 15vw;
 	margin-bottom: 1rem;
 }
 
@@ -277,7 +278,7 @@ section > p {
 ====================================== */
 footer {
 	border-top: 1px solid var(--border);
-	margin-top: 3rem;
+	margin-top: 20vw;
 	padding: 2rem 1rem;
 	font-size: 0.9rem;
 	color: var(--muted);
