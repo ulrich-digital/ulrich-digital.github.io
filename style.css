@@ -90,7 +90,7 @@
    DESIGN-VARIABLEN
 ====================================== */
 :root {
-	--bg: #181818;
+	--bg: rgb(13, 17, 23);
 	--surface: #1a1a1a;
 	--border: #2c2c2c;
 	--text: #e6e6e6;
