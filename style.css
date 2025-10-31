@@ -136,7 +136,7 @@ p {
    HEADER
 ====================================== */
 header {
-	padding: 0 1rem 1rem;
+	padding: 1rem;
 }
 
 header a.logo {
