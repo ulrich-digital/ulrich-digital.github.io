@@ -142,10 +142,12 @@ header {
 header a.logo {
 	display: block;
 	width: 160px;
-	transition: transform 0.2s ease;
+	filter: drop-shadow(2px 4px 6px #00000000);
+	transition: transform 0.2s ease, filter 0.2s ease;
 }
 
 header a.logo:hover {
+	filter: drop-shadow(2px 4px 6px #000000ff);
 	transform: scale(1.05);
 }
 
