@@ -149,15 +149,16 @@ header a.logo:hover {
 	transform: scale(1.05);
 }
 
-header a.logo img {
+header a.logo svg {
 	width: 100%;
+fill:var(--near-white);
 }
 
-header h1 {
-	margin-bottom: 0.5rem;
-	font-weight: 600;
-	color: var(--near-white);
+header a.logo svg .st0{
+fill: red;
 }
+
+
 
 /* ======================================
    CLAIM
