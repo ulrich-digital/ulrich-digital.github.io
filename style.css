@@ -141,7 +141,7 @@ header {
 
 header a.logo {
 	display: block;
-	width: 200px;
+	width: 160px;
 	transition: transform 0.2s ease;
 }
 
@@ -151,14 +151,12 @@ header a.logo:hover {
 
 header a.logo svg {
 	width: 100%;
-fill:var(--near-white);
+	fill: var(--near-white);
 }
 
-header a.logo svg .st0{
-fill: red;
+header a.logo svg .st0 {
+	fill: transparent;
 }
-
-
 
 /* ======================================
    CLAIM
@@ -238,7 +236,8 @@ section > p {
 	box-sizing: border-box;
 	box-shadow: 0 4px 12px var(--shadow);
 	overflow: hidden;
-	transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+	transition: transform 0.2s ease, box-shadow 0.2s ease,
+		border-color 0.2s ease;
 }
 
 .card:hover {
