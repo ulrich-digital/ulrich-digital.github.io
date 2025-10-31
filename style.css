@@ -154,6 +154,11 @@ header a.logo:hover {
 header a.logo svg {
 	width: 100%;
 	fill: var(--near-white);
+	transition: fill 0.2s ease;
+}
+
+header a.logo:hover  svg{
+fill: var(--highlight);
 }
 
 header a.logo svg .st0 {
