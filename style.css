@@ -1,354 +1,384 @@
-/* ======================================
-   ULRICH DIGITAL WEBFONT FAMILY
-====================================== */
 @font-face {
-	font-family: "UD Webfont";
-	src: url("./assets/fonts/ud_webfont-Thin.woff2") format("woff2");
-	font-weight: 100;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: "UD Webfont";
-	src: url("./assets/fonts/ud_webfont-ThinItalic.woff2") format("woff2");
-	font-weight: 100;
-	font-style: italic;
-	font-display: swap;
-}
-@font-face {
-	font-family: "UD Webfont";
-	src: url("./assets/fonts/ud_webfont-Light.woff2") format("woff2");
-	font-weight: 300;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: "UD Webfont";
-	src: url("./assets/fonts/ud_webfont-LightItalic.woff2") format("woff2");
-	font-weight: 300;
-	font-style: italic;
-	font-display: swap;
-}
-@font-face {
-	font-family: "UD Webfont";
-	src: url("./assets/fonts/ud_webfont-Regular.woff2") format("woff2");
-	font-weight: 400;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: "UD Webfont";
-	src: url("./assets/fonts/ud_webfont-Italic.woff2") format("woff2");
-	font-weight: 400;
-	font-style: italic;
-	font-display: swap;
-}
-@font-face {
-	font-family: "UD Webfont";
-	src: url("./assets/fonts/ud_webfont-Medium.woff2") format("woff2");
-	font-weight: 500;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: "UD Webfont";
-	src: url("./assets/fonts/ud_webfont-MediumItalic.woff2") format("woff2");
-	font-weight: 500;
-	font-style: italic;
-	font-display: swap;
-}
-@font-face {
-	font-family: "UD Webfont";
-	src: url("./assets/fonts/ud_webfont-Bold.woff2") format("woff2");
-	font-weight: 700;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: "UD Webfont";
-	src: url("./assets/fonts/ud_webfont-BoldItalic.woff2") format("woff2");
-	font-weight: 700;
-	font-style: italic;
-	font-display: swap;
-}
-@font-face {
-	font-family: "UD Webfont";
-	src: url("./assets/fonts/ud_webfont-Black.woff2") format("woff2");
-	font-weight: 900;
-	font-style: normal;
-	font-display: swap;
-}
-@font-face {
-	font-family: "UD Webfont";
-	src: url("./assets/fonts/ud_webfont-BlackItalic.woff2") format("woff2");
-	font-weight: 900;
-	font-style: italic;
-	font-display: swap;
-}
-
-
-/* Roman (opsz + wght) */
-@font-face {
-	font-family: "Inter Variable";
-	src: url("./assets/fonts/Inter-VariableFont_opsz,wght.woff2") format("woff2-variations");
+	font-family: "Google Sans";
+	src: url("./assets/fonts/GoogleSans-VariableFont.woff2") format("woff2");
 	font-weight: 100 900;
 	font-style: normal;
 	font-display: swap;
 }
 
-/* Italic (opsz + wght) */
 @font-face {
-	font-family: "Inter Variable";
-	src: url("./assets/fonts/Inter-Italic-VariableFont_opsz,wght.woff2") format("woff2-variations");
+	font-family: "Google Sans";
+	src: url("./assets/fonts/GoogleSans-Italic-VariableFont.woff2") format("woff2");
 	font-weight: 100 900;
 	font-style: italic;
 	font-display: swap;
 }
-/* ======================================
-   DESIGN-VARIABLEN
-====================================== */
+
 :root {
-	--bg: rgb(13, 17, 23);
-	--surface: rgb(18, 22, 28);
-	--border: rgb(38, 42, 48);
-	--text: #e6e6e6;
-	--muted: rgb(145 147 155);
-	--highlight: #4da3ff;
-	--shadow: rgba(0, 0, 0, 0.6);
-	--near-white: rgb(240, 246, 252);
+	color-scheme: dark;
+	--paper: #181714;
+	--paper-light: #12110e82;
+	--paper-deep: #29271f;
+	--card: #ffffff12;
+	--ink: #f5f3e6;
+	--muted: #b5b1a4;
+	--line: #514e43;
+	--accent: #f2dd61;
+	--accent-strong: #d8c33f;
+	--page-inline: clamp(20px, 4vw, 72px);
+	--content-width: 1640px;
+	--radius: 16px;
 }
 
-/* ======================================
-   GLOBAL
-====================================== */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-	font-family: "UD Webfont", system-ui, sans-serif;
-	font-family: "Inter Variable", system-ui, sans-serif;
-
-	font-weight: 400;
-	background: var(--bg);
-	color: var(--text);
 	margin: 0;
-	text-align: center;
-	line-height: 1.5;
-	overflow-x: hidden;
+	background: var(--paper);
+	color: var(--ink);
+	font-family: "Google Sans", system-ui, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.45;
+	-webkit-font-smoothing: antialiased;
 }
 
-h1 {
-	font-weight: 700;
-	font-size: 2.8rem;
+a {
+	color: inherit;
 }
 
-h2 {
-	font-weight: 600;
-	font-size: 2rem;
-	margin-bottom: 0.5em;
-}
-
-p {
-	font-weight: 300;
-	font-size: 1.1rem;
-	line-height: 1.5rem;
-	letter-spacing: 0.03rem;
-}
-
-/* ======================================
-   HEADER
-====================================== */
 header {
-	padding: 1rem;
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(280px, 8fr) minmax(0, 1fr);
+	min-height: min(60vh, 520px);
+	padding: 24px 24px clamp(64px, 7vw, 110px);
+	background: var(--paper-light);
 }
 
 header a.logo {
+	grid-column: 1 / 2;
 	display: block;
-	width: 160px;
-	filter: drop-shadow(2px 4px 6px #00000000);
-	transition: transform 0.2s ease, filter 0.2s ease;
+	width: 140px;
+	height: fit-content;
+	transition: opacity 180ms ease;
 }
 
 header a.logo:hover {
-	filter: drop-shadow(2px 4px 6px #000000ff);
-	transform: scale(1.02);
+	opacity: 0.65;
 }
 
 header a.logo svg {
+	display: none;
 	width: 100%;
-	fill: var(--near-white);
-	transition: fill 0.2s ease;
+	fill: var(--ink);
 }
 
-header a.logo:hover svg {
-	fill: white;
+header a.logo .logo-image {
+	display: block;
+	width: 140px;
+	height: auto;
+}
+
+.main-navigation {
+	grid-column: 2 / 4;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+	gap: clamp(18px, 2.4vw, 42px);
+	font-size: 0.9rem;
+	font-weight: 800;
+}
+
+.main-navigation a {
+	padding: 0.65rem 0 0.45rem;
+	text-decoration: none;
 }
 
 header a.logo svg .st0 {
 	fill: transparent;
 }
 
-/* ======================================
-   CLAIM
-====================================== */
 p.claim {
-	font-weight: 200;
-	color: var(--near-white);
-	font-size: clamp(24px, 10vw, 70px);
-	line-height: clamp(36px, 12vw, 80px);
-	letter-spacing: 0.06rem;
-	width: 1200px;
-	max-width: calc(100% - 40px);
-	padding-top: 10vw;
-	padding-left: 1rem;
-	padding-right: 1rem;
-	margin: 0 auto 5vw;
-	text-align: left;
+	grid-column: 2;
+	align-self: end;
+	max-width: 1050px;
+	margin: 0;
+	font-size: clamp(32px, 4vw, 68px);
+	font-weight: 430;
+	letter-spacing: normal;
+	line-height: 0.98;
 }
 
-/* ======================================
-   SECTION
-====================================== */
+p.claim::before {
+	display: block;
+	margin-bottom: 1.5rem;
+	color: var(--muted);
+	content: "Open Source";
+	font-size: 1rem;
+	font-weight: 600;
+	letter-spacing: normal;
+	line-height: 1.33;
+}
+
+main {
+	padding-bottom: clamp(100px, 12vw, 220px);
+}
+
 section {
-	margin: 8vw auto;
-	max-width: 1900px;
+	width: min(calc(100% - 2 * var(--page-inline)), var(--content-width));
+	margin: 0 auto;
+	padding-top: clamp(110px, 12vw, 220px);
+}
+
+section + section {
+	margin-top: clamp(80px, 8vw, 150px);
 }
 
 section h2 {
+	max-width: 680px;
+	margin: 0 0 0.55rem;
+	font-size: clamp(26px, 2.5vw, 42px);
+	font-weight: 470;
+	line-height: 1;
+}
+
+.section-eyebrow {
+	margin: 0 0 1rem;
+	color: var(--muted);
+	font-size: 1rem;
 	font-weight: 600;
-	font-size: 2.44rem;
-	color: var(--near-white);
-	letter-spacing: 0.06rem;
-	text-align: left;
-	padding: 0 2rem;
-	margin-top: 15vw;
-	margin-bottom: 1rem;
+	letter-spacing: normal;
+	line-height: 1.33;
 }
 
-section > p {
-	font-weight: 200;
-	font-size: clamp(16px, 10vw, 32px);
-	line-height: clamp(20px, 12vw, 42px);
-	color: var(--near-white);
-	letter-spacing: 0.06rem;
-	width: 800px;
-	max-width: 800px;
-	padding: 0 2rem;
-	margin: 0 0 3rem;
-	text-align: left;
+section > p:not(.section-eyebrow) {
+	max-width: 680px;
+	margin: 0 0 clamp(48px, 6vw, 90px);
+	color: var(--muted);
+	font-size: clamp(17px, 1.4vw, 23px);
+	line-height: 1.35;
 }
 
-/* ======================================
-   GRID & CARDS
-====================================== */
 .grid {
 	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-	gap: 2rem;
-	justify-items: center;
-	align-items: stretch;
-	padding: 0 2rem;
-	box-sizing: border-box;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+	gap: clamp(28px, 3vw, 40px);
 }
 
 .card {
+	position: relative;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
-	width: 100%;
-	max-width: 420px;
-	background: var(--surface);
-	border: 1px solid var(--border);
-	border-radius: 16px;
-	padding: 0 0 1rem 0;
+	min-width: 0;
+	padding-bottom: 24px;
+	background: var(--card);
+	border-radius: var(--radius);
+	box-shadow: 6px 9px 20px rgba(0, 0, 0, 0.2);
+	color: var(--ink);
 	text-decoration: none;
-	color: inherit;
-	box-sizing: border-box;
-	box-shadow: 0 4px 12px var(--shadow);
 	overflow: hidden;
-	transition: transform 0.2s ease, box-shadow 0.2s ease,
-		border-color 0.2s ease;
 }
 
-.card:hover {
-	transform: translateY(-6px);
-	border-color: var(--highlight);
-	box-shadow: 0 8px 22px rgba(0, 0, 0, 0.8);
+.card::after {
+	position: absolute;
+	right: 24px;
+	bottom: 24px;
+	width: 20px;
+	height: 20px;
+	background: url("./assets/arrow-right-sharp-solid.svg") center / contain no-repeat;
+	filter: invert(1);
+	content: "";
+	transition: transform 260ms ease-out;
+}
+
+.card:hover::after,
+.card:focus-visible::after {
+	transform: translateX(0.32rem);
+	transition-duration: 460ms;
+	transition-timing-function: linear(0, 1.35 42%, 0.82 70%, 1);
+}
+
+.card:focus-visible {
+	outline: 2px solid currentColor;
+	outline-offset: 4px;
 }
 
 .card img {
+	display: block;
 	width: 100%;
-	aspect-ratio: 16 / 9;
-	object-fit: cover;
-	height: auto;
+	margin: 0 0 18px;
 	border: 0;
-	border-radius: 16px;
-	margin-bottom: 1rem;
-	filter: drop-shadow(0px 4px 4px black);
+	border-radius: var(--radius);
+	aspect-ratio: 16 / 9;
+	background: var(--paper-deep);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.28);
+	object-fit: cover;
+	transition: none;
 }
 
 .card h3 {
-	font-size: 1.125rem;
-	letter-spacing: 0.06rem;
-	color: var(--text);
-	margin: 0.5rem 0.5rem 0.75rem;
+	margin: 0 24px 0.25rem;
+	font-size: 1.05rem;
+	font-weight: 700;
+	line-height: 1.1;
 }
 
 .card p {
-	font-size: 0.9rem;
-	line-height: 1.2rem;
+	margin: 0 72px 0 24px;
 	color: var(--muted);
-	margin: 0;
-	padding: 0 1rem;
-	flex-grow: 1;
+	font-size: 0.9rem;
+	line-height: 1.22;
 }
 
-/* ======================================
-   FOOTER
-====================================== */
 footer {
-	border-top: 1px solid var(--border);
-	margin-top: 20vw;
-	padding: 2rem 1rem;
-	font-size: 0.9rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 24px;
+	width: 100%;
+	padding: 32px max(var(--page-inline), calc((100vw - var(--content-width)) / 2));
+	background: var(--paper-light);
 	color: var(--muted);
-	text-align: right;
+	font-size: 0.85rem;
+}
+
+footer p {
+	margin: 0;
 }
 
 footer a {
-	color: var(--near-white);
+	color: var(--ink);
+	font-weight: 600;
 	text-decoration: none;
 }
 
 footer a:hover {
 	text-decoration: underline;
+	text-underline-offset: 0.2em;
 }
 
-/* ======================================
-   RESPONSIVE FIXES
-====================================== */
-@media (max-width: 1600px) {
+@media (max-width: 1180px) {
 	.grid {
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 860px) {
+	header {
+		grid-template-columns: 1fr;
+		min-height: 460px;
+	}
+
+	header a.logo,
+	.main-navigation {
+		grid-column: 1;
+	}
+
+	.main-navigation {
+		justify-content: flex-start;
+		align-self: start;
+		margin-top: 28px;
+		gap: 22px;
+	}
+
+	p.claim {
+		grid-column: 1;
+	}
+
 	.grid {
-		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 }
 
-@media (max-width: 900px) {
-	.grid {
-		grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+@media (max-width: 560px) {
+	:root {
+		--page-inline: 15px;
 	}
-}
 
-@media (max-width: 700px) {
+	header {
+		min-height: 420px;
+		padding: 15px 15px 52px;
+	}
+
+	.main-navigation {
+		display: grid;
+		grid-template-columns: repeat(3, max-content);
+		gap: 16px;
+		font-size: 0.82rem;
+	}
+
+	p.claim {
+		font-size: clamp(30px, 8.5vw, 38px);
+	}
+
+	section {
+		padding-top: 88px;
+	}
+
+	section + section {
+		margin-top: 72px;
+	}
+
+	section > p:not(.section-eyebrow) {
+		margin-bottom: 42px;
+	}
+
 	.grid {
 		grid-template-columns: 1fr;
-		padding: 0 1rem;
+		gap: 42px;
+	}
+
+	.card h3 {
+		font-size: 1rem;
+	}
+
+	.card p {
+		font-size: 0.95rem;
 	}
 
 	.card {
-		max-width: 100%;
+		padding-bottom: 18px;
+	}
+
+	.card::after {
+		right: 18px;
+		bottom: 18px;
+	}
+
+	.card h3 {
+		margin-right: 18px;
+		margin-left: 18px;
+	}
+
+	.card p {
+		margin-right: 66px;
+		margin-left: 18px;
+	}
+
+	footer {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 8px;
+		padding-block: 28px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		transition-duration: 0.01ms !important;
 	}
 }
